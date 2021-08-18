@@ -1,0 +1,286 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} */
+
+/*BODY*/
+body{
+    color: orangered;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 2rem;
+}
+
+/*HTML*/
+html{
+    font-size:62.5%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*NAV*/
+nav{ 
+    a {
+        img{
+            height: 80px;
+            width: 80px;
+}}}
+
+/*GRID*/
+.item1 { grid-area: h1; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+display: grid;
+grid-template-areas:
+    'h1 h1 h1 h1 h1 h1'
+    'menu main main main right right'
+    'menu main main main right right'
+    'menu main main main right right'
+    'footer footer footer footer footer footer';
+grid-gap: 10px;
+padding: 10px;
+}
+
+.grid-container > div {
+text-align: center;
+padding: 20px 0;
+font-size: 20px;
+}
+
+/*CLASES*/
+.titulo{
+    color: orangered;
+    font-size: 5rem;
+    font-style:oblique;
+    text-shadow: 2px 3px 5px yellow;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.titulo2{
+    color: orangered;
+    font-size: 4rem;
+    font-style:oblique;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px;
+}
+.tablas{
+    color: white;
+}
+.fondoFuerte{
+    background-color: yellow;
+}
+.imgEntrenaSeguro{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 32%;
+    margin: 15px;
+}
+.galeria{
+    ul{
+        height: 100%;
+        flex-basis: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+}}
+.galeria{
+    ul{
+        img:hover{
+            transform: scale(1.1,1.1);
+            transition: 2s ;
+}}}
+.textNar{
+    color: orangered;
+}
+
+/*FORM*/
+.translateForm{
+    transform: translate(1150px, 0px);
+}
+form fieldset{
+    margin-left: 25px;
+}
+
+/*IDs*/
+#fondo{
+    background-color: rgb(29, 27, 27);
+}
+#fondoGradient{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+/*TEXTS*/
+h1{
+    position: static;
+    left: 530px;
+    text-align: center;
+}
+legend{
+    font-size: 2.5rem;
+}
+
+/*CARRUSEL*/
+.carrusel{
+    position: static;
+    left: 530px;
+    float:inline-start
+}
+
+/*BOXES*/
+.box{
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: space-around;
+}
+.infoBox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 580px;
+    height: 250px;
+    background-color: #255F85;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+a:hover{
+    color:orangered;
+    letter-spacing: 0.3rem;
+}
+#fondo{
+    .box{ 
+        .infoBox{
+            background-color:orangered;
+            color: yellow;
+            border-top: dashed 5px;
+            border-right: dashed 5px;
+            border-bottom: dashed 5px;
+            border-left: dashed 5px;
+            display: inline-block;
+}}}
+.btnNar{
+    background-color: orangered;
+    color: yellow;
+}
+
+/*FOOTER*/
+.foot{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footInfo{
+    display: inline-block;
+    margin-right: 250px;
+}
+
+.footInfoLast{
+    display: inline-block;
+    margin-right: 0px;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1024px) {
+    .menu{
+        .item {
+            float: none;
+    }}
+    .imgEntrenaSeguro {
+        left: 170px;
+        height: 120vh;
+        width: 120vh;
+    }
+    h2.fondoFuerte {
+        font-size:7vh;
+    }
+    p{
+        font-size: 3.5vh;
+    }
+    .translateForm{
+        transform: translate(820px, 0px);
+    }
+}
+
+@media (max-width: 768px) {
+    header{
+        font-size: 3vh;
+    }
+    .menu{
+        .item{
+            float: none;
+    }}
+    .imgEntrenaSeguro {
+        left: 170px;
+        height: 80vh;
+        width: 80vh;
+    }
+    
+    h2.fondoFuerte {
+        font-size:5vh;
+    }
+    p{
+        font-size: 3.5vh;
+    }
+    .translateForm{
+        transform: translate(610px, 0px);
+    }
+}
+
+@media (max-width: 320px) {
+    .menu{
+        .item{
+            float: none;
+    }}
+    .imgEntrenaSeguro {
+        left: 45px;
+        height: 40vh;
+        width: 40vh;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2.fondoFuerte{
+        font-size:5vh;
+    }
+    p{
+        font-size: 2.5vh;
+    }
+    .footInfo{
+        display: inline-block;
+        margin-right: 240px;
+    }
+    .grid-container{
+        display: initial;
+    }
+    .galeria ul{
+        padding-inline-start: 0px;
+    }
+    .galeria{
+        ul{
+            .hijoGaleria {
+                img{
+                    max-width:100%;
+                    margin: 0px;
+    }}}}
+    .galeria{
+        ul{
+            img:hover{
+                transform: scale(1.0,1.0);
+    }}}
+    .translateForm{
+        transform: translate(50px, 0px);
+    }
+    .titulo2{
+        font-size: 3rem;
+    }
+}

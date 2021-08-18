@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulario de contacto</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Acá vas a poder encontrar toda la información que necesitamos para inscribirte y empezar a entrenar con nosotros cuanto antes.">
+        <meta name="keywords" content="INSCRIBITE, ANOTATE, INSCRIPCION, TELEFONO, DIRECCION">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    </head>
+    <body id="fondoGradient">
+
+    <!-- HEADER -->
+    <header>
+        <!-- NAV -------------------------------->
+        <nav class="navbar navbar-expand-lg navbar-light fondoFuerte textNar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.jpeg" alt="Logo Press GYM" img-fluid></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./clases.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienessomos.html">Quiénes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <h1 class="titulo2">Contactanos</h1>
+        <form>
+            <fieldset>
+                <legend display 2>Contanos qué estás buscando</legend>
+                <div>
+                    <img src="../images/logo.jpeg" style="height: 120px;width: 120px;" class="translateForm">
+                </div>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br>
+
+                <label for="anios">Edad:</label><br>
+                <input type="number" id="anios" required><br>
+
+                <br><br>
+
+                <p>¿Cuántos días a la semana querés entrenar?</p>
+
+                <input type="radio" name="entrenamiento" id="entrenamiento1"><label for="entrenamiento1">3 días semanales</label><br>
+
+                <input type="radio" name="entrenamiento" id="entrenamiento2"><label for="entrenamiento2">4 días semanales</label><br>
+
+                <input type="radio" name="entrenamiento" id="entrenamiento3"><label for="entrenamiento3">5 días semanales</label><br>
+
+                <br><br>
+
+                <p>¿Qué tipo de entrenamiento estás buscando?</p>
+
+                <input type="checkbox" name="cardio" id="cardio"><label for="cardio">Cardio</label><br>
+                <input type="checkbox" name="musculacion" id="musculacion"><label for="musculacion">Musculación</label><br>
+                <br>
+                <label for="pago">¿Cómo te gustaría abonar la cuota?</label><br>
+                <select id="pago" name="pago">
+                    <option></option>
+                    <option>Efectivo</option>
+                    <option>Tarjeta</option>
+                    <option>Mercado Pago</option>
+                </select><br><br>
+
+                <label for="texto">¿Querés contarnos algo más?</label><br>
+                <textarea id="texto" placeholder="¡Contanos!"></textarea><br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+        </fieldset>
+        </form>
+
+                <!-- LINE -------------------------------->
+                <hr/>
+
+        <!-- FOOTER -------------------------------->
+            <footer class="container-fluid foot">
+                <div>
+                    <div class="footInfo">
+                        <h4>Dirección:</h4>
+                        <p>Estados Unidos 1805, CABA</p>
+                    </div>
+                    <div class="footInfo">
+                        <h4>Teléfono:</h4>
+                        <p>011 7539-8673</p>
+                    </div>
+                    <div class="footInfoLast">
+                        <h4>Nuestras redes:</h4>
+                        <div>
+                        <a href="https://www.facebook.com/Gimnasio-PRESS-GYM-103736481748572/"><i class="bi-facebook" style="font-size: 2.5rem;"></i></a>
+                        <a href="https://www.instagram.com/gimnasiopressgym/"><i class="bi-instagram" style="font-size: 2.5rem;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
