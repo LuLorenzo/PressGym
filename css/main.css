@@ -10,6 +10,10 @@ body {
   font-size: 2rem;
 }
 
+p {
+  font-size: 1.6rem;
+}
+
 /*HTML*/
 html {
   font-size: 62.5%;
@@ -64,11 +68,7 @@ nav a img {
 .grid-container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'h1 h1 h1 h1 h1 h1'
- 'menu main main main right right'
- 'menu main main main right right'
- 'menu main main main right right'
- 'footer footer footer footer footer footer';
+      grid-template-areas: 'h1 h1 h1 h1 h1 h1' 'menu main main main right right' 'menu main main main right right' 'menu main main main right right' 'footer footer footer footer footer footer';
   grid-gap: 10px;
   padding: 10px;
 }
@@ -92,7 +92,7 @@ nav a img {
 
 .titulo2 {
   color: orangered;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-style: oblique;
   text-align: center;
   text-transform: uppercase;
@@ -130,23 +130,57 @@ nav a img {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.galeria ul img:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  -webkit-transition: 2s;
-  transition: 2s;
+  padding: 0px;
+  margin: 0px;
 }
 
 .textNar {
   color: orangered;
 }
 
+.tablaClases {
+  margin-bottom: 2%;
+}
+
+.titleBox {
+  margin-top: 3%;
+}
+
+.textBox {
+  margin: 4%;
+}
+
+.tablaMails {
+  margin: 2%;
+}
+
+.item1 {
+  margin-bottom: 2%;
+}
+
+.item3 {
+  margin-bottom: 7%;
+}
+
+.formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formularioTitle {
+  margin-top: 2.5%;
+  margin-bottom: 1.5%;
+}
+
 /*FORM*/
-.translateForm {
-  -webkit-transform: translate(1150px, 0px);
-          transform: translate(1150px, 0px);
+.translateLogo .translateForm {
+  float: right;
+  margin-bottom: 5%;
 }
 
 form fieldset {
@@ -161,6 +195,10 @@ form fieldset {
 #fondoGradient {
   background-image: -webkit-gradient(linear, left top, right top, from(#434343), to(black));
   background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+#carouselPress {
+  margin-bottom: 7%;
 }
 
 /*TEXTS*/
@@ -206,9 +244,8 @@ legend {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 580px;
+  width: 520px;
   height: 250px;
-  background-color: #255F85;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
@@ -226,12 +263,14 @@ a:hover {
   border-right: dashed 5px;
   border-bottom: dashed 5px;
   border-left: dashed 5px;
-  display: inline-block;
 }
 
 .btnNar {
   background-color: orangered;
   color: yellow;
+  margin-top: 2%;
+  margin-bottom: 1.5%;
+  margin-left: 1.8%;
 }
 
 /*FOOTER*/
@@ -246,6 +285,9 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 1.8%;
+  padding-top: 2%;
+  border-top: 3px solid orangered;
 }
 
 .footInfo {
@@ -259,94 +301,4 @@ a:hover {
 }
 
 /*RESPONSIVE*/
-@media (max-width: 1024px) {
-  .menu .item {
-    float: none;
-  }
-  .imgEntrenaSeguro {
-    left: 170px;
-    height: 120vh;
-    width: 120vh;
-  }
-  h2.fondoFuerte {
-    font-size: 7vh;
-  }
-  p {
-    font-size: 3.5vh;
-  }
-  .translateForm {
-    -webkit-transform: translate(820px, 0px);
-            transform: translate(820px, 0px);
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    font-size: 3vh;
-  }
-  .menu .item {
-    float: none;
-  }
-  .imgEntrenaSeguro {
-    left: 170px;
-    height: 80vh;
-    width: 80vh;
-  }
-  h2.fondoFuerte {
-    font-size: 5vh;
-  }
-  p {
-    font-size: 3.5vh;
-  }
-  .translateForm {
-    -webkit-transform: translate(610px, 0px);
-            transform: translate(610px, 0px);
-  }
-}
-
-@media (max-width: 320px) {
-  .menu .item {
-    float: none;
-  }
-  .imgEntrenaSeguro {
-    left: 45px;
-    height: 40vh;
-    width: 40vh;
-  }
-  h1 {
-    font-size: 4rem;
-  }
-  h2.fondoFuerte {
-    font-size: 5vh;
-  }
-  p {
-    font-size: 2.5vh;
-  }
-  .footInfo {
-    display: inline-block;
-    margin-right: 240px;
-  }
-  .grid-container {
-    display: initial;
-  }
-  .galeria ul {
-    -webkit-padding-start: 0px;
-            padding-inline-start: 0px;
-  }
-  .galeria ul .hijoGaleria img {
-    max-width: 100%;
-    margin: 0px;
-  }
-  .galeria ul img:hover {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  .translateForm {
-    -webkit-transform: translate(50px, 0px);
-            transform: translate(50px, 0px);
-  }
-  .titulo2 {
-    font-size: 3rem;
-  }
-}
 /*# sourceMappingURL=main.css.map */

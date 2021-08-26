@@ -53,56 +53,48 @@
         <form>
             <fieldset>
                 <legend display 2>Contanos qué estás buscando</legend>
-                <div>
+                <div class="translateLogo container">
                     <img src="../images/logo.jpeg" style="height: 120px;width: 120px;" class="translateForm">
                 </div>
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" required><br>
+                <label class="formulario" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" required><br>
+                <label class="formulario" for="email">Email:</label>
+                <input type="email" id="email" required>
 
-                <label for="anios">Edad:</label><br>
-                <input type="number" id="anios" required><br>
+                <label class="formulario" for="anios">Edad:</label>
+                <input type="number" id="anios" required>
 
-                <br><br>
+                <p class="formularioTitle">¿Cuántos días a la semana querés entrenar?</p>
 
-                <p>¿Cuántos días a la semana querés entrenar?</p>
+                <input type="radio" name="entrenamiento" id="entrenamiento1"><label for="entrenamiento1">3 días semanales</label><div class="formulario"></div>
 
-                <input type="radio" name="entrenamiento" id="entrenamiento1"><label for="entrenamiento1">3 días semanales</label><br>
+                <input type="radio" name="entrenamiento" id="entrenamiento2"><label for="entrenamiento2">4 días semanales</label><div class="formulario"></div>
 
-                <input type="radio" name="entrenamiento" id="entrenamiento2"><label for="entrenamiento2">4 días semanales</label><br>
+                <input type="radio" name="entrenamiento" id="entrenamiento3"><label for="entrenamiento3">5 días semanales</label><div class="formulario"></div>
 
-                <input type="radio" name="entrenamiento" id="entrenamiento3"><label for="entrenamiento3">5 días semanales</label><br>
+                <p class="formularioTitle">¿Qué tipo de entrenamiento estás buscando?</p>
 
-                <br><br>
+                <input type="checkbox" name="cardio" id="cardio"><label for="cardio">Cardio</label><div class="formulario"></div>
+                <input type="checkbox" name="musculacion" id="musculacion"><label for="musculacion">Musculación</label><div class="formulario"></div>
 
-                <p>¿Qué tipo de entrenamiento estás buscando?</p>
-
-                <input type="checkbox" name="cardio" id="cardio"><label for="cardio">Cardio</label><br>
-                <input type="checkbox" name="musculacion" id="musculacion"><label for="musculacion">Musculación</label><br>
-                <br>
-                <label for="pago">¿Cómo te gustaría abonar la cuota?</label><br>
+                <label class="formularioTitle" for="pago">¿Cómo te gustaría abonar la cuota?</label><div class="formulario"></div>
                 <select id="pago" name="pago">
                     <option></option>
                     <option>Efectivo</option>
                     <option>Tarjeta</option>
                     <option>Mercado Pago</option>
-                </select><br><br>
+                </select><div class="formulario"></div>
 
-                <label for="texto">¿Querés contarnos algo más?</label><br>
-                <textarea id="texto" placeholder="¡Contanos!"></textarea><br>
+                <label class="formularioTitle" for="texto">¿Querés contarnos algo más?</label><div class="formulario"></div>
+                <textarea id="texto" placeholder="¡Contanos!"></textarea><div class="formulario"></div>
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpiar</button>
         </fieldset>
         </form>
 
-                <!-- LINE -------------------------------->
-                <hr/>
-
         <!-- FOOTER -------------------------------->
             <footer class="container-fluid foot">
-                <div>
                     <div class="footInfo">
                         <h4>Dirección:</h4>
                         <p>Estados Unidos 1805, CABA</p>
@@ -118,7 +110,6 @@
                         <a href="https://www.instagram.com/gimnasiopressgym/"><i class="bi-instagram" style="font-size: 2.5rem;"></i></a>
                         </div>
                     </div>
-                </div>
             </footer>
         <script src="../js/bootstrap.min.js"></script>
     </body>
