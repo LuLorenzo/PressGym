@@ -194,7 +194,6 @@ a:hover{
             border-right: dashed 5px;
             border-bottom: dashed 5px;
             border-left: dashed 5px;
-            // display: inline-block;
 }}}
 .btnNar{
     background-color: orangered;
@@ -215,107 +214,8 @@ a:hover{
 }
 .footInfo{
     display: inline-block;
-    margin-right: 250px;
-}
-
-.footInfoLast{
-    display: inline-block;
-    margin-right: 0px;
-}
-
-
-/*RESPONSIVE*/
-// @media (max-width: 1024px) {
-//     .menu{
-//         .item {
-//             float: none;
-//     }}
-//     .imgEntrenaSeguro {
-//         left: 170px;
-//         height: 120vh;
-//         width: 120vh;
-//     }
-//     h2.fondoFuerte {
-//         font-size:7vh;
-//     }
-//     p{
-//         font-size: 3.5vh;
-//     }
-//     .translateForm{
-//         transform: translate(820px, 0px);
-//     }
-// }
-
-// @media (max-width: 768px) {
-//     header{
-//         font-size: 3vh;
-//     }
-//     .menu{
-//         .item{
-//             float: none;
-//     }}
-//     .imgEntrenaSeguro {
-//         left: 170px;
-//         height: 80vh;
-//         width: 80vh;
-//     }
-    
-//     h2.fondoFuerte {
-//         font-size:5vh;
-//     }
-//     p{
-//         font-size: 3.5vh;
-//     }
-//     .translateForm{
-//         transform: translate(610px, 0px);
-//     }
-// }
-
-// @media (max-width: 320px) {
-//     .menu{
-//         .item{
-//             float: none;
-//     }}
-//     .imgEntrenaSeguro {
-//         left: 45px;
-//         height: 40vh;
-//         width: 40vh;
-//     }
-//     h1{
-//         font-size: 4rem;
-//     }
-//     h2.fondoFuerte{
-//         font-size:5vh;
-//     }
-//     p{
-//         font-size: 2.5vh;
-//     }
-//     .footInfo{
-//         display: inline-block;
-//         margin-right: 240px;
-//     }
-//     .grid-container{
-//         display: initial;
-//     }
-//     .galeria ul{
-//         padding-inline-start: 0px;
-//     }
-//     .galeria{
-//         ul{
-//             .hijoGaleria {
-//                 img{
-//                     max-width:100%;
-//                     margin: 0px;
-//     }}}}
-//     .galeria{
-//         ul{
-//             img:hover{
-//                 transform: scale(1.0,1.0);
-//     }}}
-//     .translateForm{
-//         transform: translate(50px, 0px);
-//     }
-//     .titulo2{
-//         font-size: 3rem;
-//     }
-// }
+    margin-right: 155px;
+    margin-bottom: 2%;
+    a{
+        letter-spacing: 0rem;
+}}

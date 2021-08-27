@@ -292,13 +292,11 @@ a:hover {
 
 .footInfo {
   display: inline-block;
-  margin-right: 250px;
+  margin-right: 155px;
+  margin-bottom: 2%;
 }
 
-.footInfoLast {
-  display: inline-block;
-  margin-right: 0px;
+.footInfo a {
+  letter-spacing: 0rem;
 }
-
-/*RESPONSIVE*/
 /*# sourceMappingURL=main.css.map */
