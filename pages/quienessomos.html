@@ -16,7 +16,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     </head>
     <body id="fondo">
-        <div class="grid">
 
     <!-- HEADER -->
     <header>
@@ -50,42 +49,73 @@
         </nav>
     </header>
 
-        <div class="tablaMails grid-container">
-            <div class="row">
-            <div class="item1 col-12 col-lg-12 col-md-12 col-sm-12"><h1 class="titulo2">Quiénes somos</h1></div><div></div>
-            <div class="item2 table-responsive-sm col-12 col-lg-6 col-md-12 col-sm-12">        <table border="3">
-                <div>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Contacto</th>
-                        <th>Experiencia</th>
-                    </tr>
-                </thead>
-                <tbody class="tablas">
-                    <tr>
-                        <td>Sebastián</td>
-                        <td>s.sasso@gmail.com</td>
-                        <td>22 años</td>
-                    </tr>
-                    <tr>
-                        <td>Sergio</td>
-                        <td>sergi@gmail.com</td>
-                        <td>18 años</td>
-                    </tr>
-                    <tr>
-                        <td>Oscar</td>
-                        <td>oski@gmail.com</td>
-                        <td>25 años</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div class="container">
+        <img src="../images/nosotros.jpg" alt="Foto de fondo para el título" style="width:100%;">
+        <div class="centered"><h1 class="titulo2">Quiénes somos</h1></div>
+    </div>
+
+    <div class="container"><h2 class="titulo3">Nuestros profesores</h2><p class="textNar">El equipo principal está conformado por Sebastián, Sergio y Oscar. Todos ellos con más de 15 años de experiencia trabajando en nuestro gimnasio a la disposición de nuestros socios.</div>
+
+        <!-- 3 SECTIONS -------------------------------->
+            <h2 class="fondoFuerte display-4"><strong>¿Qué dicen de nosotros en Google?</strong></h2>
+            <div class="box">
+                <div class="infoBox">
+                    <h3 class="title display-5">Sergio Torres, 34 años</h3>
+                    <p class="textBox">"Gimnasio muy completo, con mucho y buen equipamiento. Excelente atención de parte de todo su equipo. Valores razonables."</p>
+                </div>
+                <div class="infoBox">
+                    <h3 class="title display-5">Marcela Panisello, 40 años</h3>
+                    <p class="textBox">Es un gimnasio de barrio, y eso hace que te sientas cómodo con la gente y el lugar.</p>
+                </div>
+                <div class="infoBox">
+                    <h3 class="title display-5">Javier Alves, 26 años</h3>
+                    <p class="textBox">El mejor gym del barrio de San Critobal. Excelente ambiente y cordial atencion de parte de todos los profes. Recomendado desde donde se lo mire.</p>
+                </div>
             </div>
-            <div class="item3 col-12 col-lg-6 col-md-12 col-sm-12">Nuestros profesores<p>El equipo principal está conformado por Sebastián, Sergio y Oscar. Todos ellos con más de 15 años de experiencia trabajando en nuestro gimnasio a la disposición de nuestros socios.</div>  
-            <div></div>
-            <div class="item4 col-12 col-lg-6 col-md-12 col-sm-12"><img src="../images/nosotros.jpg" alt="Foto de nuestro equipo de trabajo" width="300px" height="300px"></div>
-            <div class="item5 col-12 col-lg-6 col-md-12 col-sm-12"><h3>Opiniones de google</h3>
-                <p>Gimnasio muy completo, mucho y buen equipamiento, excelente atención de parte de todo su equipo, valores razonables</p></div>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-lg btnNar" data-bs-toggle="modal" data-bs-target="#botonContacto">
+        Contactanos
+    </button>
+
+    <button type="button" class="btn btn-lg btnNar" data-bs-toggle="modal" data-bs-target="#botonClases">
+        Nuestras clases
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="botonContacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Querés contactarnos?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Vas a ser re direccionado/a. ¿Estás seguro/a?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <a href="../pages/contacto.html" type="button" class="btn btnNar">Sí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="botonClases" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Querés ver nuestras actividades?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Vas a ser re direccionado/a. ¿Estás seguro/a?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                    <a href="../pages/clases.html" type="button" class="btn btnNar">Sí</a>
+                </div>
+            </div>
         </div>
     </div>
 
