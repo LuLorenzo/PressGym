@@ -175,10 +175,19 @@ a:hover{
             border-bottom: dashed 5px;
             border-left: dashed 5px;
 }}}
+
+/*BOTONES*/
 .btnNar{
     background-color: orangered;
     color: yellow;
     margin-top: 2%;
+    margin-bottom: 1.5%;
+    margin-left: 1.8%;
+}
+.btnAma{
+    background-color: yellow;
+    color: orangered;
+    margin-top: -2%;
     margin-bottom: 1.5%;
     margin-left: 1.8%;
 }
@@ -204,4 +213,10 @@ a:hover{
 @media (max-width: 768px) {
     .tablaClases{
         display: none;
-}}
+    }}
+@media (min-width: 769px) {
+    .box{
+        .infoBox{
+            .btn{
+                display: none;
+}}}}
