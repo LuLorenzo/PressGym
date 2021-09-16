@@ -161,10 +161,6 @@ legend{
     padding: 10px;
     margin: 10px;
 }
-a:hover{
-    color:orangered;
-    letter-spacing: 0.3rem;
-}
 #fondo{
     .box{ 
         .infoBox{
@@ -205,9 +201,7 @@ a:hover{
     display: inline-block;
     margin-right: 155px;
     margin-bottom: 2%;
-    a{
-        letter-spacing: 0rem;
-}}
+}
 
 /*Responsive*/
 @media (max-width: 768px) {
